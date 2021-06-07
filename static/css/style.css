@@ -1,5 +1,5 @@
 body.home {
-    background-image: url('/static/img/flag_grid.png');
+    background-image: url('../img/flag_grid.png');
 }
 
 nav {
