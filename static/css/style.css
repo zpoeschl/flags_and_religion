@@ -6,6 +6,10 @@ nav {
     margin-bottom: 30px;
 }
 
+#data {
+    width: 2110px;
+}
+
 footer {
     text-align: right;
     padding: 3px;
