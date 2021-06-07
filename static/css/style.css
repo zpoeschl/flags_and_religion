@@ -1,9 +1,10 @@
-body {
+body.home {
     background-image: url('/static/img/flag_grid.png');
 }
 
 nav {
     margin-bottom: 30px;
+    width: 100%;
 }
 
 footer {
