@@ -2,6 +2,10 @@ body {
     background-image: url('/static/img/flag_grid.png');
 }
 
+nav {
+    margin-bottom: 30px;
+}
+
 footer {
     text-align: right;
     padding: 3px;
@@ -15,4 +19,12 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+.row {
+    background-color: white;
+    opacity: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    border: 2px solid #343a40;
 }
