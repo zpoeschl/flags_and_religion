@@ -5,13 +5,13 @@ var flagmap = L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{
     tileSize: 512,
     maxZoom: 18,
     zoomOffset: -1,
-    id: "mapbox/outdoors-v11",
+    id: "mapbox/light-v10",
     accessToken: API_KEY
   });
 
 var map = L.map("map", {
-center: [38, -98],
-zoom: 4
+center: [0, 0],
+zoom: 2
 });
 
 flagmap.addTo(map);
