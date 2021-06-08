@@ -1,5 +1,4 @@
 nav {
-    width: 2250px;
     background-color: #212529;
 }
 
@@ -9,14 +8,19 @@ nav {
     background-color: #212529;
     background-position: top center;
     padding-bottom: 300px;
-    width: 2250px;
+}
+
+#footer_link {
+    float: left;
+    color: #2fb380;
+    padding-left: 30px;
 }
 
 footer {
     text-align: right;
     padding: 3px;
     padding-top: 18px;
-    padding-right: 20px;
+    padding-right: 30px;
     background-color: #212529;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
@@ -26,20 +30,24 @@ footer {
     bottom: 0;
     width: 100%;
     margin-top: 30px;
-    width: 2250px;
 }
 
-#frame {
-    background-color: #f8f9fa;
-    opacity: 100%;
-    padding: 15px;
-    border-radius: 10px;
-    border: 5px solid #3459e6;
+.descriptor {
+    text-align: center;
+    font-size: x-small;
 }
 
 #tableau {
     max-height: 1900px;
-    max-width: 800px;
     height: 100%;
     width: 100%;
+}
+
+h1 {
+    padding-top: 20px;
+    color: #287bb5;
+}
+
+#brand-logo {
+    filter: invert(100%);
 }
