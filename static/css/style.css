@@ -23,6 +23,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
+    margin-top: 30px;
 }
 
 #frame {
@@ -31,4 +32,11 @@ footer {
     padding: 15px;
     border-radius: 10px;
     border: 5px solid #3459e6;
+}
+
+#tableau {
+    max-height: 1900px;
+    max-width: 800px;
+    height: 100%;
+    width: 100%;
 }
