@@ -1,5 +1,4 @@
 nav {
-    width: 2250px;
     background-color: #212529;
 }
 
@@ -9,7 +8,6 @@ nav {
     background-color: #212529;
     background-position: top center;
     padding-bottom: 300px;
-    width: 2250px;
 }
 
 footer {
@@ -26,7 +24,6 @@ footer {
     bottom: 0;
     width: 100%;
     margin-top: 30px;
-    width: 2250px;
 }
 
 #frame {
@@ -39,7 +36,11 @@ footer {
 
 #tableau {
     max-height: 1900px;
-    max-width: 800px;
     height: 100%;
     width: 100%;
+}
+
+h1 {
+    padding-top: 20px;
+    color: #287bb5;
 }
