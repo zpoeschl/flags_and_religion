@@ -1,13 +1,15 @@
-body.home {
-    background-image: url('../img/flag_grid.png');
-}
-
 nav {
-    margin-bottom: 30px;
+    width: 2250px;
+    background-color: #212529;
 }
 
-#data {
-    width: 2110px;
+#home {
+    background-image: url('../img/flag_grid.png');
+    background-repeat: repeat-x;
+    background-color: #212529;
+    background-position: top center;
+    padding-bottom: 300px;
+    width: 2250px;
 }
 
 footer {
@@ -15,15 +17,16 @@ footer {
     padding: 3px;
     padding-top: 18px;
     padding-right: 20px;
-    background-color: #3459e6;
+    background-color: #212529;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
-    position: fixed;
+    position: static;
     left: 0;
     bottom: 0;
     width: 100%;
     margin-top: 30px;
+    width: 2250px;
 }
 
 #frame {
