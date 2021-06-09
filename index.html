@@ -18,10 +18,9 @@
 </head>
 
 <body>
-    <a name="home"></a>
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand text-success" href="#home">
+            <a class="navbar-brand text-success" href="#top">
                 <img src="static/img/flag_icon.png" width="30" height="30" class="d-inline-block align-top" id="brand-logo">
                 Flags + Religion
             </a>
@@ -33,7 +32,7 @@
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#top">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
@@ -57,7 +56,7 @@
     <div class="container">
         <h1>About</h1>
         <p>
-            Welcome to the website of group 4 where we summarize our use of machine learning to 
+            <strong>Welcome!</strong> to the final project website of group 4. Here we summarize our use of machine learning to 
             explore the potential predicitability of a country's religion based on the design of their flag.
             <br>
             <br>
@@ -68,26 +67,220 @@
             UCI Machine Learning Repository</a>. This data set is not large, consisting
             of only 194 instances (countries/flags) and 30 attributes (descriptors), making
             the size of our experiments simultaneously manageable and limited. This data set
-            can be viewed with limited attributes the <a class="text-success" href="#data">data section</a> below.
+            can be viewed with limited attributes in the <a class="text-success" href="#data">data section</a> below.
             <br>
             <br>
-            To explore this data set and apply machine learning, we used a jupyter notebook 
-            along with tool scikit-learn to apply a neural network, as well as pandas, 
-            and matplotlib.
+            To explore this data set and apply machine learning, we performed tests using a jupyter notebook. 
+            Within our notebook we used scikit-learn to test a neural network, the most successful of our tests, as well as 
+            a support-vector machine. Pandas and Matplotlib were also used to support the processing and visualization of 
+            our data.
         </p>
     </div>
 
 <!-- TABLE/DATA -->
     <a name="data"></a>
-    <div class="container">
-        <h1>Data</h1>
-        <p>
-          Data used for this project was obtained from the <a class="text-success"
-            href="https://archive.ics.uci.edu/ml/datasets/Flags" target="_blank">
-            flags data set</a> available through the <a class="text-success" href="https://archive.ics.uci.edu/ml"
-            target="_blank">
-            UCI Machine Learning Repository</a>.
-        </p>
+    <div class="container" id="list-pad">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Data</h1>
+                <p>
+                Data used for this project was obtained from the <a class="text-success"
+                    href="https://archive.ics.uci.edu/ml/datasets/Flags" target="_blank">
+                    flags data set</a> available through the <a class="text-success" href="https://archive.ics.uci.edu/ml"
+                    target="_blank">
+                    UCI Machine Learning Repository</a>. The table below shows all 194 instances with limited attributes. However a key of 
+                    all attributes available in this data set is below for reference.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">1</span>
+                        Country
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">2</span>
+                        Continent
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">3</span>
+                        Zone (NE, SE, SW, NW)
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">4</span>
+                        Area (sq km)
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">5</span>
+                        Population
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">6</span>
+                        Primary language
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">7</span>
+                        Primary religion
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">8</span>
+                        # of vertical bars
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">9</span>
+                        # of horizontal stripes
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">10</span>
+                        # of different colors
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">11</span>
+                        Red, present/not present
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">12</span>
+                        Green, present/not present
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">13</span>
+                        Blue, present/not present
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">14</span>
+                        Gold, present/not present
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">15</span>
+                        White, present/not present
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">16</span>
+                        Black, present/not present
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">17</span>
+                        Orange, present/not present
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">18</span>
+                        Main hue: predominant color
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">19</span>
+                        # of circles
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">20</span>
+                        Crosses: # of crosses (upright)
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">21</span>
+                        Saltires: # of crosses (diagonal)
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">22</span>
+                        # of quartered sections
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">23</span>
+                        # of sun or star symbols
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">24</span>
+                        Crescent: present/not present
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">25</span>
+                        Triangle: present/not present
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">26</span>
+                        Icon: present/not present
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">27</span>
+                        Animate: present/not present
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">28</span>
+                        Text: present/not present
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">29</span>
+                        Top left: color in corner
+                    </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="badge bg-primary rounded-pill">30</span>
+                        Bottom right: color in corner
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <table class="table table-hover table-sm">
@@ -3643,16 +3836,18 @@
             </div>
         </div>
 
-        <div class="row" id="tableau">
-            <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
                 <h3 class="text-success">Tableau</h3>
                 <p>Tableau specific written desciption.</p>
             </div>
-            <div class="col-md-6">
+        </div>
+        <div class="row">
+            <div class="col-md-12">
                 <div class='tableauPlaceholder' id='viz1623113776173' style='position: relative'><noscript><a href='#'><img
                                 alt='landing-page '
                                 src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;fl&#47;flags-of-the-world&#47;landing-page&#47;1_rss.png'
-                                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                                style='border: none' /></a></noscript><object class='tableauViz' width='100%' height='100%' style='display:none;'>
                         <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
                         <param name='embed_code_version' value='3' />
                         <param name='site_root' value='' />
@@ -3668,8 +3863,9 @@
                         <param name='display_count' value='yes' />
                         <param name='language' value='en-US' />
                     </object></div>
-                <script
+                    <script
                     type='text/javascript'>                    var divElement = document.getElementById('viz1623113776173'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '650px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '650px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+                </div>
             </div>
         </div>
     </div>
