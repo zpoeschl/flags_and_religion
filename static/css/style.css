@@ -37,12 +37,6 @@ footer {
     font-size: x-small;
 }
 
-#tableau {
-    max-height: 1900px;
-    height: 100%;
-    width: 100%;
-}
-
 h1 {
     padding-top: 20px;
     color: #287bb5;
@@ -50,4 +44,8 @@ h1 {
 
 #brand-logo {
     filter: invert(100%);
+}
+
+#list-pad {
+    margin-bottom: 30px;
 }
