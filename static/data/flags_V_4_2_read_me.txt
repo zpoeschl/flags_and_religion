@@ -8,3 +8,5 @@ religion:
 4 = other
 
 v. 4.1 removes a duplicate record for Argentina.
+
+v. 4.2 renames "Germany_DDR" as East_Germany and "Germany_FRG" as West_Germany. This shouldn't affect machine learning, but lets the Tableau tooltip for each of these be clickable and land on the Wikipedia entry for that country's flag, instead of erroring out.
