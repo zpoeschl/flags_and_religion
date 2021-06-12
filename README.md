@@ -23,10 +23,10 @@ our data.
 In this section, we wanted to provide further explanation into the various machine learning techniques that were used to test our data. Those machine learning techniques would be:
 
 * Multiple Linear Regression
+* Suport Vector Machines
+* K Nearest Neighbors
 * Neural Network
 * Deep Neural Network
-* Additional 
-* Additional
 
 Knowing that these are the classification models that we would be using, we will now need to:
 
@@ -49,25 +49,40 @@ This step will be covered alone and the rest of the steps will be address in the
 
 ![mlt-lin-r2](https://user-images.githubusercontent.com/75814760/121753162-64a13d00-cad7-11eb-9a47-8115e5788e2f.png)
 
+
+### Improvements
+After testing one machine learning technique with less than stellar results we looked to see if there were any improvements within the data that could be made.
+The three areas we looked to improve on were by consolidating religion, adding population density and area by square miles for each country. Originally we used the
+following 8 religions: 
+
+![religion_screenshot](https://user-images.githubusercontent.com/75814760/121786415-46921600-cb85-11eb-9dd6-c543a5eca755.png)
+
+### Support Vector Machines
+
+space for information
+
+### K Nearest Neighbors
+
+space for information
+
 ### Neural Network
 
-![neural-net-summary](https://user-images.githubusercontent.com/75814760/121753219-90bcbe00-cad7-11eb-9712-4f22bed865be.png)
+![neural-net-summary](https://user-images.githubusercontent.com/75814760/121786327-ce2b5500-cb84-11eb-86e2-2d64562309f6.png)
 
-![neural-net-acc](https://user-images.githubusercontent.com/75814760/121753237-9a462600-cad7-11eb-8db4-17d695ba0d0d.png)
+![neural-net-acc](https://user-images.githubusercontent.com/75814760/121786342-e1d6bb80-cb84-11eb-958a-acaea7b58a87.png)
 
 ### Deep Neural Network
 
-![deep-neural-net-summary](https://user-images.githubusercontent.com/75814760/121753272-aa5e0580-cad7-11eb-9ced-18d199bc8e0a.png)
+![deep-neural-net-summary](https://user-images.githubusercontent.com/75814760/121786346-ec915080-cb84-11eb-8272-3b1505ac06bd.png)
 
-![deep-neural-net-acc](https://user-images.githubusercontent.com/75814760/121753288-b3e76d80-cad7-11eb-9c5a-38159f82514b.png)
+![deep-neural-net-acc](https://user-images.githubusercontent.com/75814760/121786352-fc109980-cb84-11eb-93e3-958953995ef1.png)
 
+## Further Improvements
 
-### Improvements
-We originally used 8 outputs (religions). However, with a bit of tweaking you will notice that there may be room to consolidate. By combining "Catholic" with "Other Christian", looking at the "Ethnic" countries and utilizing the majority religion of that country and combining "Marxist" and "Other" due to Marxism not being a religion we were able to narrow our religions to 5.
-
-![religion_screenshot](https://user-images.githubusercontent.com/75814760/121753472-0de83300-cad8-11eb-8ceb-069ec3f3bcd0.png)
-
-We then repeated our steps for the neural and deep neural technique.
+The models have continued to improve in terms of accuracy, however the last improvements that we can look to make would be by removing similar information and 
+consolidating further. This was accomplished by removing the population desity as well as the square are. Lastly we improved the religion column further.
+With further tweaking we were able to look within the "Other" religions and look at what religion is practiced by the majority of the population. The majority 
+were moved to Christianity and Muslim (Islam). We also increased the hidden layers to 18.
 
 ### Improved Artifical Neural Network
 
