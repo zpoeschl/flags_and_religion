@@ -1,8 +1,8 @@
-In the file flags_with_headers_v_3.csv, religion is encoded to more closely resemble them as assigned in the 1986 Collins Gem Guide: Flags which Forsyth based his dataset on:
+In the file flags_with_headers_v_4.csv, religion is encoded to more closely resemble them as assigned in the 1986 Collins Gem Guide: Flags which Forsyth based his dataset on:
 
 religion:
-1 = Christianity
-2 = Islam
-3 = Buddhism
-4 = Hinduism
-7 = other
+0 = Christianity
+1 = Islam
+2 = Buddhism
+3 = Hinduism
+4 = other
