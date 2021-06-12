@@ -3809,13 +3809,152 @@
             <div class="col-md-12">
                 <h1>Analysis</h1>
                 <p>
-                    Paragraph about our analysis
-                    <br>
-                    <br>
-                    Another paragraph about our analysis
-                    <br>
-                    <br>
-                    Another paragraph about our analysis
+                    In this section, we wanted to provide further explanation into the various machine learning techniques that were used to test our data. Those machine learning techniques would be:
+                </p>
+                <ul>
+                    <li>Mulitiple Linear Regression</li>
+                    <li>Artificial Neural Network</li>
+                    <li>Artificial Deep Neural Network</li>
+                    <li>Additional</li>
+                    <li>Additional</li>
+                </ul>
+                <p>
+                    We were able to utilize these machine learning techniques by following four primary steps (albeit that some models required additional steps). Those four main steps being: 
+                </p>
+                <ol>
+                    <li>Preprocess the Data</li>
+                    <li>Train the Model</li>
+                    <li>Test the model</li>
+                    <li>Improve</li>
+                </ol>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Multiple Linear Regression</h3>
+                <p>
+                    Multiple Linear Regression is used to estimate the relationship between two or more independent variances and one dependent variable. The independent variable is
+                    the parameter that is used to calculate the dependent variable or outcome. For the purpose of our analysis the independent variables would be the attributes of the 
+                    flag and origin of those that represent it (i.e. landmass, population, bars, stripes, colors, etc.) and the dependent variable would be religion.
+                </p>
+                <br>
+                <img src="static\img\Mulit-line-acc.jpg" width="50%">
+                <p> Once the data was processed and the model was trained, we tested the accuracy of our trained values and our tested values. As you can see we were able to achieve
+                    41.4% accuracy on the trained values and practically 0% on the test values. This tells us that using Multiple Linear Regression, our model was able to predict 41.4%
+                     of the trained data points and unable to predict any of the test data points correctly. Multiple Linear Regression would likely not be a good technique to use for
+                    prediction on this model. 
+                </p>
+                <br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="static\img\mlt-lin-train-graph.png" width="100%">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="static\img\mlt-lin-test-graph.png" width="100%">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="static\img\mlt-lin-r2.png" width="100%" height="25%">
+                    </div>
+                </div>
+                <p>
+                    As you can see in the images above, there appears to be little predicitability in the train data and test data. This is further reinforced by the very small,
+                    negative R2 value
+                </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Artificial Neural Network</h3>
+                <p>
+                    An artificial neural network is a computational model that consists of several processing elements that receive inputs and deliver outputs based on their predifined
+                    activation function. They are trained by feeding inputs and comparing the outputs to a known label. The error in the output probablity is then fed back to updated
+                    the weights in each neuron. This is repeated until the neural network learns how to provide an accurate probability for a given input.
+                </p>
+                <br>
+                <img src="static\img\neural-net-summary.png" width="50%">
+                <p> This model was created by starting with an initial layer with 48 inputs for all of our flag attributes, 24 hidden layers and 8 outputs (1 output for each religion).</p>
+                <br>
+                <img src="static\img\neural-net-acc.png" width="50%">
+                <p>
+                    Using the artificial neural network technique we were able to achieve an accuracy of 51.0% for our test data. While more favorable than the multiple linear regression
+                    technique, this is still not what you would consider completely favorable. However, we may be able to possibly improve upon this model?
+                </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Artificial Deep Neural Network</h3>
+                <br>
+                <p>
+                    A deep neural network is an artificial neural network with multiple layers between the input and output layers. The thought process being that by adding additional layers
+                    one may be able to increase the accuracy.
+                </p>
+                <br>
+                <img src="static\img\deep-neural-net-summary.png" width="50%">
+                <p> This model was created by starting with an initial layer with 48 inputs for all of our flag attributes, 24 hidden layers and 8 outputs (1 output for each religion).
+                    then adding an additional layer with the same amount of hidden layers as the initial layer.
+                </p>
+                <br>
+                <img src="static\img\deep-neural-net-acc.png" width="50%">
+                <p>
+                    Using the artificial deep neural network technique we were able to achieve an accuracy of 46.9% for our test data. This debunks our previous hypothesis that adding additional
+                    layers would improve our accuracy.
+                </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Improvements</h3>
+                <br>
+                <p>
+                    While the neural networks produced a greater accuracy on the test data than the multiple linear regression model did, the results are still fairly unfavorable. Another
+                    measure that we could look to take would be reprocessing our data further. This was done by consolidating our dependent values further. Originally we were looking to
+                    use 8 religions:
+                </p>
+                <ol>
+                    <li>Catholic</li>
+                    <li>Other Christian</li>
+                    <li>Muslim</li>
+                    <li>Buddhist</li>
+                    <li>Hindu</li>
+                    <li>Ethnic</li>
+                    <li>Marxist</li>
+                    <li>Other</li>
+                </ol>
+                <P>With a bit of tweaking though you will notice that there may be room to consolidate. By combining "Catholic" with "Other Christian", looking at the "Ethnic" countries
+                    and utilizing the majority religion of that country and combining "Marxist" and "Other" due to Marxism not being a religion we were able to narrow our religions to 5:
+                </P>
+                <ol>
+                    <li>Christian</li>
+                    <li>Muslim</li>
+                    <li>Buddhist</li>
+                    <li>Hindu</li>
+                    <li>Other</li>
+                </ol>
+                <p> We then repeated our steps for the neural and deep neural technique.</p>
+                <br>
+                <h4>Improved Artifical Neural Network</h4>
+                <img src="static\img\neural-net-combined-summary.png" width="50%">
+                <br>
+                <img src="static\img\combined-neural-net-acc.png" width="50%">
+                <br>
+                <br>
+                <h4>Improved Artifical Deep Neural Network</h4>
+                <img src="static\img\deep-neural-net-combined-summary.png" width="50%">
+                <br>
+                <img src="static\img\combined-deep-neural-net-acc.png" width="50%">
+                <br>
+                <br>
+                <p>While the results are not as favorable as we would like. There is a substantial improvement over the previous techniques with the deep model showing the
+                    highest accuracy of 75.5%. 
                 </p>
             </div>
         </div>
