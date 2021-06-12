@@ -6,5 +6,4 @@ religion:
 3 = Buddhism
 4 = Hinduism
 5 = ethnic
-6 = Judaism
 7 = other
