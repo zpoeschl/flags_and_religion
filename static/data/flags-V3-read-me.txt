@@ -5,5 +5,4 @@ religion:
 2 = Islam
 3 = Buddhism
 4 = Hinduism
-5 = ethnic
 7 = other
