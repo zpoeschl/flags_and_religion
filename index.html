@@ -3813,10 +3813,10 @@
                 </p>
                 <ul>
                     <li>Mulitiple Linear Regression</li>
+                    <li>Support Vector Machines</li>
+                    <li>K Nearest Neighbor</li>
                     <li>Artificial Neural Network</li>
                     <li>Artificial Deep Neural Network</li>
-                    <li>Additional</li>
-                    <li>Additional</li>
                 </ul>
                 <p>
                     We were able to utilize these machine learning techniques by following four primary steps (albeit that some models required additional steps). Those four main steps being: 
@@ -3864,6 +3864,70 @@
                 </p>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Improvements</h3>
+                <br>
+                <p>
+                    After testing one machine learning technique with less than stellar results we looked to see if there were any improvements within the data that could be made.
+                    The three areas we looked to improve on were by consolidating religion, adding population density and area by square miles for each country. Originally we used the
+                    following 8 religions: 
+                </p>
+                <ol>
+                    <li>Catholic</li>
+                    <li>Other Christian</li>
+                    <li>Muslim</li>
+                    <li>Buddhist</li>
+                    <li>Hindu</li>
+                    <li>Ethnic</li>
+                    <li>Marxist</li>
+                    <li>Other</li>
+                </ol>
+                <P>With a bit of tweaking combined "Catholic" with "Other Christian" as well as "Ethnic" with "Marxist" and "Other". By doing this we were able to narrow our religions to 5:
+                </P>
+                <ol>
+                    <li>Christian</li>
+                    <li>Muslim</li>
+                    <li>Buddhist</li>
+                    <li>Hindu</li>
+                    <li>Other</li>
+                </ol>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Support Vector Machines</h3>
+                <br>
+                <p>
+                    Support Vector information
+                </p>
+                <br>
+                <img>
+                <p>
+                    Support Vector information
+                </p>
+                <br>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>K Nearest Neighbor</h3>
+                <br>
+                <p>
+                    K Nearest Neighbor Information
+                </p>
+                <br>
+                <img>
+                <p>
+                    K Nearest Neighbor Analysis Data
+                </p>
+                <br>
+            </div>
+        </div>
         <br>
         <br>
         <div class="row">
@@ -3876,11 +3940,11 @@
                 </p>
                 <br>
                 <img src="static\img\neural-net-summary.png" width="50%">
-                <p> This model was created by starting with an initial layer with 48 inputs for all of our flag attributes, 24 hidden layers and 8 outputs (1 output for each religion).</p>
+                <p> This model was created by starting with an initial layer with 50 inputs for all of our flag attributes, 15 hidden layers and 5 outputs (1 output for each religion).</p>
                 <br>
-                <img src="static\img\neural-net-acc.png" width="50%">
+                <img src="static\img\neural-net-acc.png" width="60%">
                 <p>
-                    Using the artificial neural network technique we were able to achieve an accuracy of 51.0% for our test data. While more favorable than the multiple linear regression
+                    Using the artificial neural network technique we were able to achieve an accuracy of 63.27% for our test data. While more favorable than the multiple linear regression
                     technique, this is still not what you would consider completely favorable. However, we may be able to possibly improve upon this model?
                 </p>
             </div>
@@ -3897,13 +3961,13 @@
                 </p>
                 <br>
                 <img src="static\img\deep-neural-net-summary.png" width="50%">
-                <p> This model was created by starting with an initial layer with 48 inputs for all of our flag attributes, 24 hidden layers and 8 outputs (1 output for each religion).
+                <p> This model was created by starting with an initial layer with 50 inputs for all of our flag attributes, 15 hidden layers and 5 outputs (1 output for each religion).
                     then adding an additional layer with the same amount of hidden layers as the initial layer.
                 </p>
                 <br>
-                <img src="static\img\deep-neural-net-acc.png" width="50%">
+                <img src="static\img\deep-neural-net-acc.png" width="60%">
                 <p>
-                    Using the artificial deep neural network technique we were able to achieve an accuracy of 46.9% for our test data. This debunks our previous hypothesis that adding additional
+                    Using the artificial deep neural network technique we were able to achieve an accuracy of 61.22% for our test data. This debunks our previous hypothesis that adding additional
                     layers would improve our accuracy.
                 </p>
             </div>
@@ -3912,33 +3976,14 @@
         <br>
         <div class="row">
             <div class="col-md-12">
-                <h3>Improvements</h3>
+                <h3> Further Improvements</h3>
                 <br>
                 <p>
-                    While the neural networks produced a greater accuracy on the test data than the multiple linear regression model did, the results are still fairly unfavorable. Another
-                    measure that we could look to take would be reprocessing our data further. This was done by consolidating our dependent values further. Originally we were looking to
-                    use 8 religions:
+                    The models have continued to improve in terms of accuracy, however the last improvements that we can look to make would be by removing similar information and
+                    consolidating further. This was accomplished by removing the population desity as well as the square are. Lastly we improved the religion column further.
+                    With further tweaking we were able to look within the "Other" religions and look at what religion is practiced by the majority of the population. The majority 
+                    were moved to Christianity and Muslim (Islam). We also increased the hidden layers to 18.
                 </p>
-                <ol>
-                    <li>Catholic</li>
-                    <li>Other Christian</li>
-                    <li>Muslim</li>
-                    <li>Buddhist</li>
-                    <li>Hindu</li>
-                    <li>Ethnic</li>
-                    <li>Marxist</li>
-                    <li>Other</li>
-                </ol>
-                <P>With a bit of tweaking though you will notice that there may be room to consolidate. By combining "Catholic" with "Other Christian", looking at the "Ethnic" countries
-                    and utilizing the majority religion of that country and combining "Marxist" and "Other" due to Marxism not being a religion we were able to narrow our religions to 5:
-                </P>
-                <ol>
-                    <li>Christian</li>
-                    <li>Muslim</li>
-                    <li>Buddhist</li>
-                    <li>Hindu</li>
-                    <li>Other</li>
-                </ol>
                 <p> We then repeated our steps for the neural and deep neural technique.</p>
                 <br>
                 <h4>Improved Artifical Neural Network</h4>
