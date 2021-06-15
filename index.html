@@ -3813,8 +3813,8 @@
                 </p>
                 <ul>
                     <li>Mulitiple Linear Regression</li>
-                    <li>Support Vector Machines</li>
                     <li>K Nearest Neighbor</li>
+                    <li>Support Vector Machines</li>
                     <li>Artificial Neural Network</li>
                     <li>Artificial Deep Neural Network</li>
                 </ul>
@@ -3898,24 +3898,7 @@
         <br>
         <div class="row">
             <div class="col-md-12">
-                <h3 class="text-success">Support Vector Machines</h3>
-                <br>
-                <p>
-                    Support Vector information
-                </p>
-                <br>
-                <img>
-                <p>
-                    Support Vector information
-                </p>
-                <br>
-            </div>
-        </div>
-        <br>
-        <br>
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="text-success">K-Nearest Neighbor</h3>
+                <h3>K-Nearest Neighbor</h3>
                 <br>
                 <p>
                     K-Nearest Neighbors (KNN) is an algorithm for both classification and regression problems based on Supervised Learning technique. It focuses on the ‘similarity’ 
@@ -3925,9 +3908,46 @@
                 <br>
                 <img src="static\img\KNN.png" width="50%">
                 <br>
-                <img src="static\img\KNNresults.png" width="50%">
+                <img src="static\img\KNNClassification.png" width="50%">
                 <p>
-                    K Nearest Neighbor Analysis Data
+                    Per the KNN model, we have an accuracy of 63% of classifying flag colors, shapes, images, and text to predict the country's religion. K = 9 was choosen as, per the 
+                    graph, 9 is when the score starts to stabilize and choosing an odd number confirms there are no ties between classes. Per the classification report, classifying 
+                    the religion Christian was secure as the precision method (percentage of the predictions were correct) is at 63%, recall method (percentage of the positive cases 
+                    classified correctly) is at 96%, and f1-score method (percentage of positive predictions were correct) is at 76% but that has to do with the support method (sample size) 
+                    of 27 vs the other religion in single digits.
+                </p>
+                <p>
+                    In conclusion, per the support method of the religion data points being imbalanced, the macro average confirmed our overall results. Although the KNN method has an 
+                    accuracy of 63% in classifying the religion, due to our imbalance data set, our overall precision is 27%, our overall recall is 30% and overall f1-score is 28% with a 
+                    sample size of 49. In order to improve the overall result, we will need a larger data set or narrowing the religion to 3-4. The percentage is fairly low overall; however, 
+                    I can conclude that the KNN model can classify countries with Christianity as their religion efficiently based on the attributes of the country’s flag.
+                </p>
+                <br>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Support Vector Machines</h3>
+                <br>
+                <p>
+                    Support Vector Machines is a supervised Machine Learning algorithm using a linear model for classification problems. The algorithm is use to create a line or a hyperplane 
+                    which separates the data into classes and as a result classifies the data points.
+                </p>
+                <br>
+                <img src="static\img\SVMClassification.png" width="50%">
+                <br>
+                <p>
+                    Per the Support Vector Machines model, we have an accuracy of 59% of classifying flag colors, shapes, images, and text to predict the country's religion. Per the classification 
+                    report, classifying the religion Christian was secure as the precision method (percentage of the predictions were correct) is at 65%, recall method (percentage of the positive 
+                    cases classified correctly) is at 89%, and f1-score method (percentage of positive predictions were correct) is at 75% but that has to do with the support method (sample size) 
+                    of 27 vs the other religion in single digits.
+                </p>
+                <p>
+                    In conclusion, per the support method of the religion data points being imbalanced, the macro average confirmed our overall results. Although the Support Vector Machines method 
+                    has an accuracy of 59% in classifying the religion, due to our imbalance data set, our overall precision is 31%, our overall recall is 29% and overall f1-score is 28% with a 
+                    sample size of 49.
                 </p>
                 <br>
             </div>
