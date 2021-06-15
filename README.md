@@ -57,13 +57,15 @@ following 8 religions:
 
 ![religion_screenshot](https://user-images.githubusercontent.com/75814760/121786415-46921600-cb85-11eb-9dd6-c543a5eca755.png)
 
+### K-Nearest Neighbors
+
+![KNN](static\img\KNN.png)
+
+![KNNClassification](static\img\KNNClassification)
+
 ### Support Vector Machines
 
-space for information
-
-### K Nearest Neighbors
-
-space for information
+![SVMClassification](static\img\SVMClassification)
 
 ### Neural Network
 
