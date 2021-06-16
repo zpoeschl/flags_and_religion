@@ -23,8 +23,8 @@ our data.
 In this section, we wanted to provide further explanation into the various machine learning techniques that were used to test our data. Those machine learning techniques would be:
 
 * Multiple Linear Regression
+* K-Nearest Neighbors
 * Suport Vector Machines
-* K Nearest Neighbors
 * Neural Network
 * Deep Neural Network
 
@@ -57,13 +57,16 @@ following 8 religions:
 
 ![religion_screenshot](https://user-images.githubusercontent.com/75814760/121786415-46921600-cb85-11eb-9dd6-c543a5eca755.png)
 
+### K-Nearest Neighbors
+
+![KNN](https://user-images.githubusercontent.com/75968440/122225788-fcf24580-ce7a-11eb-958a-2846e2b764e9.png)
+
+![KNNClassification](https://user-images.githubusercontent.com/75968440/122225957-227f4f00-ce7b-11eb-9102-41bf8fd9acf1.png)
+
+
 ### Support Vector Machines
 
-space for information
-
-### K Nearest Neighbors
-
-space for information
+![SVMClassification](https://user-images.githubusercontent.com/75968440/122226045-32972e80-ce7b-11eb-90cc-cb46073a0de1.png)
 
 ### Neural Network
 
