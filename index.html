@@ -54,27 +54,65 @@
 <!-- ABOUT -->
     <a name="about"></a>
     <div class="container">
-        <h1>About</h1>
-        <p>
-            <strong>Welcome!</strong> to the final project website of group 4. Here we summarize our use of machine learning to 
-            explore the potential predicitability of a country's religion based on the design of their flag.
-            <br>
-            <br>
-            For this project, we used the <a class="text-success"
-            href="https://archive.ics.uci.edu/ml/datasets/Flags" target="_blank">
-            flags data set</a> available through the <a class="text-success"
-            href="https://archive.ics.uci.edu/ml" target="_blank">
-            UCI Machine Learning Repository</a>. This data set is not large, consisting
-            of only 194 instances (countries/flags) and 30 attributes (descriptors), making
-            the size of our experiments simultaneously manageable and limited. This data set
-            can be viewed with limited attributes in the <a class="text-success" href="#data">data section</a> below.
-            <br>
-            <br>
-            To explore this data set and apply machine learning, we performed tests using a jupyter notebook. 
-            Within our notebook we used scikit-learn to test a neural network, the most successful of our tests, as well as 
-            a support-vector machine. Pandas and Matplotlib were also used to support the processing and visualization of 
-            our data.
-        </p>
+        <div class="row">
+            <div class="col-md-12">
+                <h1>About</h1>
+                <p>
+                    <strong>Welcome!</strong> to the final project website of group 4. Here we summarize our use of machine learning to 
+                    explore the potential predicitability of a country's religion based on the design of their flag.
+                    <br>
+                    <br>
+                    For this project, we used the <a class="text-success"
+                    href="https://archive.ics.uci.edu/ml/datasets/Flags" target="_blank">
+                    flags data set</a> available through the <a class="text-success"
+                    href="https://archive.ics.uci.edu/ml" target="_blank">
+                    UCI Machine Learning Repository</a>. This data set is not large, consisting
+                    of only 194 instances (countries/flags) and 30 attributes (descriptors), making
+                    the size of our experiments simultaneously manageable and limited. This data set
+                    can be viewed with limited attributes in the <a class="text-success" href="#data">data section</a> below.
+                    <br>
+                    <br>
+                    To explore this data set and apply machine learning, we performed tests using a jupyter notebook. 
+                    Within our notebook we used scikit-learn to test a neural network, the most successful of our tests, as well as 
+                    a support-vector machine. Pandas and Matplotlib were also used to support the processing and visualization of 
+                    our data.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-success">Tableau</h3>
+                <p>To kick off this project, we first explored the data set and its attributes using Tableau. This allowed for quick initial visualizations of the data while also helping us to clarify how machine learning could be used to explore the data more in depth.</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class='tableauPlaceholder' id='viz1623113776173' style='position: relative'><noscript><a href='#'><img
+                                alt='landing-page '
+                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;fl&#47;flags-of-the-world&#47;landing-page&#47;1_rss.png'
+                                style='border: none' /></a></noscript><object class='tableauViz' width='100%' height='100%' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='flags-of-the-world&#47;landing-page' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image'
+                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;fl&#47;flags-of-the-world&#47;landing-page&#47;1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                    </object></div>
+                    <script
+                    type='text/javascript'>                    var divElement = document.getElementById('viz1623113776173'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '650px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '650px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+                </div>
+            </div>
+        </div>
     </div>
 
 <!-- TABLE/DATA -->
@@ -3809,7 +3847,7 @@
             <div class="col-md-12">
                 <h1>Analysis</h1>
                 <p>
-                    In this section, we wanted to provide further explanation into the various machine learning techniques that were used to test our data. Those machine learning techniques would be:
+                    In this section, we provide further explanation of the various machine learning techniques that were used to test our data. Those machine learning techniques were:
                 </p>
                 <ul>
                     <li>Mulitiple Linear Regression</li>
@@ -3819,7 +3857,7 @@
                     <li>Artificial Deep Neural Network</li>
                 </ul>
                 <p>
-                    We were able to utilize these machine learning techniques by following four primary steps (albeit that some models required additional steps). Those four main steps being: 
+                    We were able to utilize these machine learning techniques by following four primary steps, with additional steps/substeps for some models: 
                 </p>
                 <ol>
                     <li>Preprocess the Data</li>
@@ -3829,7 +3867,6 @@
                 </ol>
             </div>
         </div>
-        <br>
         <br>
         <div class="row">
             <div class="col-md-12">
@@ -3843,35 +3880,37 @@
                 <img src="static\img\Mulit-line-acc.jpg" width="50%">
                 <p> Once the data was processed and the model was trained, we tested the accuracy of our trained values and our tested values. As you can see we were able to achieve
                     41.4% accuracy on the trained values and practically 0% on the test values. This tells us that using Multiple Linear Regression, our model was able to predict 41.4%
-                     of the trained data points and unable to predict any of the test data points correctly. Multiple Linear Regression would likely not be a good technique to use for
+                     of the trained data points and unable to predict any of the test data points correctly. As such, Multiple Linear Regression was not a good technique to use for
                     prediction on this model. 
                 </p>
-                <br>
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="static\img\mlt-lin-train-graph.png" width="100%">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="static\img\mlt-lin-test-graph.png" width="100%">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="static\img\mlt-lin-r2.png" width="100%" height="25%">
-                    </div>
-                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="static\img\mlt-lin-train-graph.png" width="100%">
+            </div>
+            <div class="col-md-4">
+                <img src="static\img\mlt-lin-test-graph.png" width="100%">
+            </div>
+            <div class="col-md-4">
+                <img src="static\img\mlt-lin-r2.png" width="100%" height="25%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
                 <p>
-                    As you can see in the images above, there appears to be little predicitability in the train data and test data. This is further reinforced by the very small,
-                    negative R2 value
+                As you can see in the images above, there appears to be little predicitability in the train data and test data. This is further reinforced by the very small,
+                negative R2 value.
                 </p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <h3>Improvements</h3>
-                <br>
+                <h2 class="text-warning">Improvements</h2>
                 <p>
                     After testing one machine learning technique with less than stellar results we looked to see if there were any improvements within the data that could be made.
-                    The three areas we looked to improve on were by consolidating religion, adding population density and area by square miles for each country. Originally we used the
-                    following 8 religions: 
+                    We attempted improvements by consolidating religion, adding population density, and adjusting to area by square miles for each country. Originally we used the
+                    following eight religions: 
                 </p>
                 <ol>
                     <li>Catholic</li>
@@ -3883,7 +3922,7 @@
                     <li>Marxist</li>
                     <li>Other</li>
                 </ol>
-                <P>With a bit of tweaking combined "Catholic" with "Other Christian" as well as "Ethnic" with "Marxist" and "Other". By doing this we were able to narrow our religions to 5:
+                <P>With a bit of tweaking, combining "Catholic" with "Other Christian," as well as "Ethnic" with "Marxist" and "Other," we were able to narrow our religions to five:
                 </P>
                 <ol>
                     <li>Christian</li>
@@ -3895,168 +3934,135 @@
             </div>
         </div>
         <br>
-        <br>
         <div class="row">
             <div class="col-md-12">
-                <h3>K-Nearest Neighbor</h3>
-                <br>
+                <h3 class="text-success">K-Nearest Neighbor</h3>
                 <p>
                     K-Nearest Neighbors (KNN) is an algorithm for both classification and regression problems based on Supervised Learning technique. It focuses on the ‘similarity’ 
-                    between the new data and available data (training set). The KNN algorithm is used to store the available data and classifies the new data based on the similarity 
+                    between the new data and available data (training set). The KNN algorithm is used to store the available data and classifies the new data based on similarity 
                     into a category that is similar to the available category. 
                 </p>
-                <br>
-                <img src="static\img\KNN.png" width="50%">
-                <br>
-                <img src="static\img\KNNClassification.png" width="50%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="static\img\KNN.png">
+            </div>
+            <div class="col-md-6">
+                <img src="static\img\KNNClassification.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
                 <p>
-                    Per the KNN model, we have an accuracy of 63% of classifying flag colors, shapes, images, and text to predict the country's religion. K = 9 was choosen as, per the 
-                    graph, 9 is when the score starts to stabilize and choosing an odd number confirms there are no ties between classes. Per the classification report, classifying 
-                    the religion Christian was secure as the precision method (percentage of the predictions were correct) is at 63%, recall method (percentage of the positive cases 
-                    classified correctly) is at 96%, and f1-score method (percentage of positive predictions were correct) is at 76% but that has to do with the support method (sample size) 
-                    of 27 vs the other religion in single digits.
+                    Per the KNN model, we have an accuracy of 63% of classifying flag colors, shapes, images, and text to predict the country's religion. K=9 was chosen as, per the 
+                    graph, 9 was when the score began to stabilize and choosing an odd number ensured there were no ties between classes. Per the classification report, classifying 
+                    the religion Christian was secure as the precision method (percentage of the predictions were correct) was at 63%, recall method (percentage of the positive cases 
+                    classified correctly) was at 96%, and f1-score method (percentage of positive predictions were correct) was at 76%. However, that had to do with the support method (sample size) 
+                    of 27 vs. the other religions in single digits.
                 </p>
                 <p>
-                    In conclusion, per the support method of the religion data points being imbalanced, the macro average confirmed our overall results. Although the KNN method has an 
-                    accuracy of 63% in classifying the religion, due to our imbalance data set, our overall precision is 27%, our overall recall is 30% and overall f1-score is 28% with a 
-                    sample size of 49. In order to improve the overall result, we will need a larger data set or narrowing the religion to 3-4. The percentage is fairly low overall; however, 
-                    I can conclude that the KNN model can classify countries with Christianity as their religion efficiently based on the attributes of the country’s flag.
+                    In conclusion, per the support method of the religion data points being imbalanced, the macro average confirmed our overall results. Although the KNN method had an 
+                    accuracy of 63% in classifying the religion, due to our imbalanced data set, our overall precision was 27%, our overall recall was 30% and overall f1-score was 28% with a 
+                    sample size of 49. In order to improve the overall result, we determined we would need either a larger data set or to narrow the religion to 3-4. The percentage was fairly low overall; however, 
+                    we can conclude that the KNN model can classify countries with Christianity as their religion efficiently based on the attributes of the country’s flag.
                 </p>
-                <br>
             </div>
         </div>
         <br>
-        <br>
         <div class="row">
             <div class="col-md-12">
-                <h3>Support Vector Machines</h3>
-                <br>
+                <h3 class="text-success">Support Vector Machines</h3>
                 <p>
-                    Support Vector Machines is a supervised Machine Learning algorithm using a linear model for classification problems. The algorithm is use to create a line or a hyperplane 
+                    Support Vector Machines is a supervised Machine Learning algorithm which uses a linear model for classification problems. The algorithm is used to create a line or hyperplane 
                     which separates the data into classes and as a result classifies the data points.
                 </p>
-                <br>
                 <img src="static\img\SVMClassification.png" width="50%">
-                <br>
                 <p>
-                    Per the Support Vector Machines model, we have an accuracy of 59% of classifying flag colors, shapes, images, and text to predict the country's religion. Per the classification 
-                    report, classifying the religion Christian was secure as the precision method (percentage of the predictions were correct) is at 65%, recall method (percentage of the positive 
-                    cases classified correctly) is at 89%, and f1-score method (percentage of positive predictions were correct) is at 75% but that has to do with the support method (sample size) 
-                    of 27 vs the other religion in single digits.
+                    Using the Support Vector Machines model, we had an accuracy of 59% when classifying flag colors, shapes, images, and text to predict the country's religion. Per the classification 
+                    report, classifying the religion Christian was secure as the precision method (percentage of the predictions were correct) was at 65%, recall method (percentage of the positive 
+                    cases classified correctly) was at 89%, and f1-score method (percentage of positive predictions were correct) was at 75%. However, that had to do with the support method (sample size) 
+                    of 27 vss the other religions in single digits.
                 </p>
                 <p>
                     In conclusion, per the support method of the religion data points being imbalanced, the macro average confirmed our overall results. Although the Support Vector Machines method 
-                    has an accuracy of 59% in classifying the religion, due to our imbalance data set, our overall precision is 31%, our overall recall is 29% and overall f1-score is 28% with a 
+                    had an accuracy of 59% in classifying the religion, due to our imbalanced data set, our overall precision was 31%, our overall recall was 29%, and overall f1-score was 28% with a 
                     sample size of 49.
                 </p>
-                <br>
             </div>
         </div>
-        <br>
         <br>
         <div class="row">
             <div class="col-md-12">
                 <h3 class="text-success">Artificial Neural Network</h3>
                 <p>
                     An artificial neural network is a computational model that consists of several processing elements that receive inputs and deliver outputs based on their predifined
-                    activation function. They are trained by feeding inputs and comparing the outputs to a known label. The error in the output probablity is then fed back to updated
+                    activation function. They are trained by feeding inputs and comparing the outputs to a known label. The error in the output probablity is then fed back to update
                     the weights in each neuron. This is repeated until the neural network learns how to provide an accurate probability for a given input.
                 </p>
-                <br>
                 <img src="static\img\neural-net-summary.png" width="50%">
-                <p> This model was created by starting with an initial layer with 50 inputs for all of our flag attributes, 15 hidden layers and 5 outputs (1 output for each religion).</p>
-                <br>
+                <p>This model was created by starting with an initial layer of 50 inputs for all of flag attributes, 15 hidden layers, and 5 outputs (1 output for each religion).</p>
                 <img src="static\img\neural-net-acc.png" width="60%">
                 <p>
                     Using the artificial neural network technique we were able to achieve an accuracy of 63.27% for our test data. While more favorable than the multiple linear regression
-                    technique, this is still not what you would consider completely favorable. However, we may be able to possibly improve upon this model?
+                    technique, this is still not what we would consider completely favorable. However, we decided to test the possibility of improving this model through using the deep model of this same network.
                 </p>
             </div>
         </div>
         <br>
-        <br>
         <div class="row">
             <div class="col-md-12">
-                <h3>Artificial Deep Neural Network</h3>
-                <br>
+                <h3 class="text-success">Artificial Deep Neural Network</h3>
                 <p>
                     A deep neural network is an artificial neural network with multiple layers between the input and output layers. The thought process being that by adding additional layers
                     one may be able to increase the accuracy.
                 </p>
-                <br>
                 <img src="static\img\deep-neural-net-summary.png" width="50%">
-                <p> This model was created by starting with an initial layer with 50 inputs for all of our flag attributes, 15 hidden layers and 5 outputs (1 output for each religion).
-                    then adding an additional layer with the same amount of hidden layers as the initial layer.
+                <p> This model was created by starting with an initial layer of 50 inputs for all of our flag attributes, 15 hidden layers, and 5 outputs (1 output for each religion).
+                    Then an additional layer was added with the same amount of hidden layers as the initial layer.
                 </p>
-                <br>
                 <img src="static\img\deep-neural-net-acc.png" width="60%">
                 <p>
-                    Using the artificial deep neural network technique we were able to achieve an accuracy of 61.22% for our test data. This debunks our previous hypothesis that adding additional
-                    layers would improve our accuracy.
+                    Using the artificial deep neural network technique, we were able to achieve an accuracy of 61.22% for our test data. This debunked our previous hypothesis that adding additional
+                    layers would improve accuracy.
                 </p>
             </div>
         </div>
-        <br>
-        <br>
         <div class="row">
             <div class="col-md-12">
-                <h3> Further Improvements</h3>
-                <br>
+                <h2 class="text-warning">Further Improvements</h2>
                 <p>
-                    The models have continued to improve in terms of accuracy, however the last improvements that we can look to make would be by removing similar information and
-                    consolidating further. This was accomplished by removing the population desity as well as the square are. Lastly we improved the religion column further.
-                    With further tweaking we were able to look within the "Other" religions and look at what religion is practiced by the majority of the population. The majority 
-                    were moved to Christianity and Muslim (Islam). We also increased the hidden layers to 18.
+                    Over the course of our experiments, the models continued to improve in terms of accuracy. However the last improvements that we would look to make would involve 
+                    changes to the data set itself, such as removing similar information and consolidating categories further.
                 </p>
-                <p> We then repeated our steps for the neural and deep neural technique.</p>
-                <br>
-                <h4>Improved Artifical Neural Network</h4>
-                <img src="static\img\neural-net-combined-summary.png" width="50%">
-                <br>
-                <img src="static\img\combined-neural-net-acc.png" width="50%">
-                <br>
-                <br>
-                <h4>Improved Artifical Deep Neural Network</h4>
-                <img src="static\img\deep-neural-net-combined-summary.png" width="50%">
-                <br>
-                <img src="static\img\combined-deep-neural-net-acc.png" width="50%">
-                <br>
-                <br>
-                <p>While the results are not as favorable as we would like. There is a substantial improvement over the previous techniques with the deep model showing the
-                    highest accuracy of 75.5%. 
+                <p>
+                    That being said, we did achieve some improvements to the data set by removing population density and square area, and consolidating religions.
+                    With further tweaking we were able to look within the "Other" religions and determine what religion is practiced by the majority of the population. 
+                    The majority were moved to Christianity and Muslim (Islam). We also increased the hidden layers to 18.
                 </p>
+                <p> Once these improvements were made, we then repeated our steps for the neural and deep neural techniques.</p>
             </div>
         </div>
-
         <div class="row">
-            <div class="col-md-12">
-                <h3 class="text-success">Tableau</h3>
+            <div class="col-md-6">
+                <h5>Improved Artifical Neural Network</h5>
+                <img src="static\img\neural-net-combined-summary.png">
+                <img src="static\img\combined-neural-net-acc.png">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Improved Artifical Deep Neural Network</h5>
+                <img src="static\img\deep-neural-net-combined-summary.png">
+                <img src="static\img\combined-deep-neural-net-acc.png">
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class='tableauPlaceholder' id='viz1623113776173' style='position: relative'><noscript><a href='#'><img
-                                alt='landing-page '
-                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;fl&#47;flags-of-the-world&#47;landing-page&#47;1_rss.png'
-                                style='border: none' /></a></noscript><object class='tableauViz' width='100%' height='100%' style='display:none;'>
-                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                        <param name='embed_code_version' value='3' />
-                        <param name='site_root' value='' />
-                        <param name='name' value='flags-of-the-world&#47;landing-page' />
-                        <param name='tabs' value='no' />
-                        <param name='toolbar' value='yes' />
-                        <param name='static_image'
-                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;fl&#47;flags-of-the-world&#47;landing-page&#47;1.png' />
-                        <param name='animate_transition' value='yes' />
-                        <param name='display_static_image' value='yes' />
-                        <param name='display_spinner' value='yes' />
-                        <param name='display_overlay' value='yes' />
-                        <param name='display_count' value='yes' />
-                        <param name='language' value='en-US' />
-                    </object></div>
-                    <script
-                    type='text/javascript'>                    var divElement = document.getElementById('viz1623113776173'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '650px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '650px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
-                </div>
+                <p>While the results were not as favorable as we would like, there was substantial improvement over the previous techniques with the deep model showing the
+                    highest accuracy of 75.5%.
+                </p>
             </div>
         </div>
     </div>
