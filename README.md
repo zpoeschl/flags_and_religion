@@ -80,7 +80,7 @@ space for information
 ## Further Improvements
 
 The models have continued to improve in terms of accuracy, however the last improvements that we can look to make would be by removing similar information and 
-consolidating further. This was accomplished by removing the population desity as well as the square are. Lastly we improved the religion column further.
+consolidating further. This was accomplished by removing the population desity as well as the square area. Lastly we improved the religion column further.
 With further tweaking we were able to look within the "Other" religions and look at what religion is practiced by the majority of the population. The majority 
 were moved to Christianity and Muslim (Islam). We also increased the hidden layers to 18.
 
